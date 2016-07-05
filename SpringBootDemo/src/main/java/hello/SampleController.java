@@ -5,7 +5,6 @@ package hello;
  */
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +19,6 @@ public class SampleController {
     }
 
     public static void main(String[] args) throws Exception {
-        ApplicationContext applicationContext = SpringApplication.run(SampleController.class, args);
-
+        SpringApplication.run(SampleController.class, args);
     }
 }
